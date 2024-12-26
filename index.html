@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeoNames API Explorer</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1>GeoNames API Explorer</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>API Name</th>
+        <th>Description</th>
+        <th>Parameters</th>
+        <th>Results</th>
+      </tr>
+    </thead> 
+    <tbody> 
+      <tr>
+        <td>Country Info</td>
+        <td>
+          Get information about a specific country.
+          <select id="countrySelect">
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+          </select>
+          <select id="langSelect">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+          </select>
+          <button id="getCountryInfoBtn">Get Info</button>
+        </td>
+        <td id="countryInfoResult"></td>
+      </tr>
+      <tr>
+        <td>Find Nearby Place Names</td>
+        <td>Find nearby places based on latitude and longitude.</td>
+        <td>
+          Latitude: <input type="text" id="latInput" value="37.7749"> 
+          Longitude: <input type="text" id="lonInput" value="-122.4194">
+          <button id="findNearbyPlacesBtn">Find Places</button>
+        </td>
+        <td id="nearbyPlacesResult"></td>
+      </tr>
+      <tr>
+        <td>Elevation</td>
+        <td>Get elevation data for a given location.</td>
+        <td>
+          Latitude: <input type="text" id="elevLatInput" value="37.7749"> 
+          Longitude: <input type="text" id="elevLonInput" value="-122.4194">
+          <button id="getElevationBtn">Get Elevation</button>
+        </td>
+        <td id="elevationResult"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // (Your JavaScript code remains the same)
+  </script>
+
+</body>
+</html>
